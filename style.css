@@ -1,0 +1,23 @@
+* {
+    /* Show what's going on */
+    border: thin black dashed;
+}
+
+#design {
+    width: 400px;
+    color: white;
+}
+
+#contact {
+    width: 400px;
+    background-color: rgba(255, 48, 63, 0.9);
+}
+
+#contact > div > input {
+    background-color: rgb(190, 20, 40, 0.9);
+}
+
+#submit {
+    background-color: white;
+    color: red;
+}
