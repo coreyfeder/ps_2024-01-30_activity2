@@ -12,13 +12,7 @@ body {
     max-width: 300px;
 }
 
-#design {
-    width: 100%;
-    /* max-width: 300px; */
-}
-
 #contact {
-    /* width: 300px; */
     background-color:rgba(250, 50, 75, 255);
     text-align: center;
     padding: 3%;
@@ -59,7 +53,6 @@ textarea {
 
 select {
     font-size: xx-small;
-    /* appearance: none; */
 }
 
 #submit {
