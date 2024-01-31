@@ -1,20 +1,56 @@
 * {
-    /* Show what's going on */
-    border: thin black dashed;
+    /* border: black solid 1px; */
+    box-sizing: border-box;
+    border: none;
+    border-collapse: collapse;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 300px;
 }
 
 #design {
-    width: 400px;
-    color: white;
+    max-width: 300px;
 }
 
 #contact {
-    width: 400px;
-    background-color: rgba(255, 48, 63, 0.9);
+    width: 300px;
+    background-color:rgba(250, 50, 75, 255);
+    text-align: center;
 }
 
-#contact > div > input {
-    background-color: rgb(190, 20, 40, 0.9);
+#contactHeaders {
+    width: 100%;
+    padding: 0;
+}
+
+#x {
+    padding-top: 5px;
+}
+
+input, select, textarea {
+    background-color: rgba(202,43,58,255);
+    color: white;
+    width: 88%;
+    border: none;
+    padding: 3%;
+    margin: 3%;
+    display: block;
+}
+
+input, textarea {
+    font-size: xx-small;
+    font-weight: lighter;
+}
+
+/* textarea {
+} */
+
+select {
+    font-size: xx-small;
+    width: 94%;
 }
 
 #submit {

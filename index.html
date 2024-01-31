@@ -5,23 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get In Touch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Target image -->
     <h3>Sample</h3>
-    <img id="design" src="design_sample.png">
+    <img id="design" src="img/design_sample.png" method="post">
+    <!-- end Target -->
     <hr />
     <h3>WIP</h3>
     <form id="contact">
-        <div>
-            <img src="" alt="a small X, for no apparent reason">
-            <label>Get in touch</label>
-            <label>Good choice...</label>
-            <input id="name" type="text">Your name please<input>
-            <input id="email" type="email">A contact email<input>
-            <input id="subject" type="select">About a new project<input>
-            <input id="description" type="text">How can I help?<input>
-            <input id="submit" type="submit" value="Send Message">
+        <div id="contactHeaders">
+            <div id="x"><img src="img/weird_x.png" alt="a small X, for no apparent reason" style="width: 20px;" /></div>
+            <div style="font-size: xx-large; font-weight:bolder;">Get in touch</div>
+            <div style="font-size: xx-small;">Good choice...</div>
         </div>
+        <!-- This should use `placeholder`, not `value`, but the text becomes too dim to read. -->
+        <div><input id="name" type="text" value="Your name please" /></div>
+        <div><input id="email" type="email" value="A contact email" /></div>
+        <div>
+            <select id="subject" name="subject">
+                <option value="project" selected>About a new project</option>
+                <option value="recipe">About a new recipe</option>
+                <option value="incantation">About a new incantation</option>
+                <option value="terror">About a new terrorist plot</option>
+                <option value="old">About an old project, recipe, incantation, or terrorist plot</option>
+                <option value="support">Technical support</option>
+                <option value="spiritual">Spiritual support, non-exorcism</option>
+                <option value="exorcism">Spiritual support, exorcism</option>
+                <option value="sales">Sales</option>
+            </select>
+        </div>
+        <!-- As above, this starting content should be `placeholder`. -->
+        <div><textarea id="description" type="text" name="description" rows="6">How can I help?</textarea></div>
+        <div><button id="submit" type="submit">Send Message</button></div>
+        <input type="hidden" id="secrets" value="you can't see me!" />
     </form>
 </body>
 </html>
